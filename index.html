@@ -1,77 +1,79 @@
-<!DOCTYPE html><html><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-<meta name="Keywords" content="Emotion.ly, emotionly, emotion, health, medical, patient" />
-<meta name="Description" content="Are You Emotion.ly...?" />
-<meta name="Author" content="Chris Thomas" /><!--Created by Chris Thomas on Thursday, June 28, 2012-->
-<link rel="shortcut icon" href="https://raw.github.com/theuiguru/theUIguru/master/favicon.png">
-<title>Emotion.ly</title><style type="text/css">
-html, body {background:#003366 url(http://static.tumblr.com/ac1b2a0f8d972b1d5093830699d6bc81/g14kzws/Dxammmk9y/tumblr_static_bg3.jpg) fixed repeat-x center; font-family:Arial, sans-serif; color:#333;}
-a {color:#DC143C; text-decoration:none;}
-h1 {font-size:50px;}
-.header {color:#DC143C;}
-.emotionly {margin:3em auto; max-width:600px; text-align:center; background:#FFF; border-radius:30px; padding:20px;}
-.about {display:none; text-align:justify;}
-footer > .footer {position:absolute; bottom:10px; right:10px;}
-.left {float:left;} .right {float:right;}
-.btn-key {cursor:pointer; color:#FFF; background-color:#DC143C; border-color:#CC3333; border-radius:5px; padding:15px; width:80px;}
-a.btn {border-radius:5px; padding:15px; width:80px; display:inline-block; color:#F9F9F9;}
-.red {background-color:#d9534f;}
-.orange {background-color:#f0ad4e;}
-.yellow {background-color:#FBEC5D;}
-.green {background-color:#5cb85c;}
-.aqua {background-color:#5bc0de;}
-.blue {background-color:#428bca;}
-.indigo {background-color:#563d7c;}
-.purple {background-color:#CC99CC;}
-.pink {background-color:#F6A4D5;}
-div > .btns {display:none;}
-</style></head><body><div class="emotionly">
-<h1>Are You <span class="header">Emotion.ly</span>...?</h1>
-
-<a onclick="greet();" class="btn-key">Hi, what's your name?</a><div id="greet"></div>
-
-<div class="btns">
-<a href="#" class="btn red" onclick="emo1();">OK</a>
-<a href="#" class="btn orange" onclick="emo2();">Hungry</a>
-<a href="#" class="btn yellow" onclick="emo3();">Thirsty</a><br/><br/>
-<a href="#" class="btn green" onclick="emo4();">Angry</a>
-<a href="#" class="btn aqua" onclick="emo5();">Happy</a>
-<a href="#" class="btn blue" onclick="emo6();">Sad</a><br/><br/>
-<a href="#" class="btn indigo" onclick="emo7();">Tired</a>
-<a href="#" class="btn purple" onclick="emo8();">Excited</a>
-<a href="#" class="btn pink" onclick="emo9();">Sick</a>
-</div>
-
-<p><a onclick="about();" class="btn-key">What is Emotion.ly?</a></p>
-<div id="about" class="about"><p>Emotion.ly is a health application that was built under the influence of <a href="http://www.zocdoc.com/winthrop/joseph-mathew-md-33706" target="_blank">Dr. Joseph P. Mathew</a> (M.D., New York) when discovering patients having difficulties over speech patterns. This app is certainly not limited to hospital patients only. It provides a daily sense of comfort, as well as a state of well-being. Try it out while it's free (for now)!</p>
-<p>We are currently in the process of building a super-ific app, so stay tuned for updates soon. As well as, this app is open sourced on github.</p>
-<p><a href="http://twitter.com/cthomas1211" target="_blank">Follow me on twitter</a></p>
-</div>
-
-<!--<footer><div class="footer"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Checking out Emotion.ly" data-count="horizontal" data-via="cthomas1211">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<iframe src="http://www.facebook.com/plugins/like.php?href=http://twitter.com/cthomas1211%2F&amp;layout=button_count&amp;show_faces=true&amp;width=50&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe></div></footer>-->
-
-</div><script type="text/javascript">
-function emo1() { alert("I'm OK!"); }
-function emo2() { alert("I'm Hungry!"); }
-function emo3() { alert("I'm Thirsty!"); }
-function emo4() { alert("I'm Angry!"); }
-function emo5() { alert("I'm Happy!"); }
-function emo6() { alert("I'm Sad!"); }
-function emo7() { alert("I'm Tired!"); }
-function emo8() { alert("I'm Excited!"); }
-function emo9() { alert("I'm Sick!"); }
-function greet() {
-	var name=prompt("Enter your name", "");
-	if (name!=null) {
-		document.getElementById("greet").innerHTML="<p>Hello " + name + "! How are you today?</p><p>I'm feeling...</p>";
-	}
-}
-function about() {
-	var a = document.getElementById("about");
-	if(a.style.display == "block")
-    	a.style.display = "none";
-	else 
-		a.style.display = "block";
-}
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>#staticshowdown</title>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+<meta name="Keywords" content="staticshowdown, static, web, app, theuiguru, chris, thomas, js, quote">
+<meta name="Description" content="Static Showdown app built by theUIguru">
+<meta name="Author" content="Chris Thomas"><link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)">
+<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css"><style type="text/css">
+html, body {background:#8B542B url(https://abs.twimg.com/images/themes/theme8/bg.gif) no-repeat fixed; margin:0 auto; padding:0 auto; color:#FFF; font-family:Arial, sans-serif; font-weight:bold;}
+a {text-decoration:none; -o-transition: all 0.5s; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; transition: all 0.5s; color:#EEEB8D;}
+a:hover {color:#FFFF00; text-decoration:none; -o-transition: all 0.5s; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; transition: all 0.5s;}
+.main {width:100%; height:100%; background:rgba(0,0,0,.5) repeat;}
+.quote {margin:0 auto; text-align:center; position:absolute; left:50%; top:50%;}
+footer > .footer {position:absolute; bottom:10px; right:0;}
+</style></head><body><footer><div class="footer"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ss14-team-133.divshot.io" data-text="Check out undefined by theUIguru" data-via="staticshowdown">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br/>built by <a href="http://twitter.com/cthomas1211">@theuiguru</a></div></footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><script>
+var quote = new Array("Every protagonist of every story, show, or movie is the story of my life.", 
+	"Intelligence is not a privilege, it's a gift, and you use it for the good of mankind.", 
+	"If you wanna win, you gotta fuel like a winner!", 
+	"Just Do It!", 
+	"That's what she said!", 
+	"The SOUL is the warrior's greatest weapon. He closes his eyes and reaches the heavens.", 
+	"#sweet!",
+	"#Timehop!",
+	"#sorry!", 
+	"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - @kylerichter", 
+	"A man loves his sweetheart the most, his wife the best, but his mother the longest...",
+	"No matter what role people play, they will always solve problems everyday. - Dr. Naresh N. Gupta",
+	"Rajan life rule no. 383: Turn all your hopes into prayers. Hopes depend on things uncertain. Prayers rely on the only absolute certainty. #God - @MCIronMan",
+	"Choose two: Good, Fast, Cheap. - Wexelblat's Scheduling Algorithm",
+	"The less code on one line, the less likely you'll encounter a merge conflict.",
+	"Lord have mercy upon us, accepting our frail service; mercifully send us blessings, and forgiveness from heavens. - St. Ephrem", 
+	"I've always learned more from people who disagree with me.",
+	"The next person who calls me a 'nice guy' is going to get punched in the face.",
+	"A Church without Youth is a Church without a future. Moreover, Youth without a Church is Youth without a future. - H.H. Pope Shenouda III",
+	"Never regret anything because at one time, it was exactly what you wanted.",
+	"Why do we fast? Because we fell into sin, in the first place, because we broke the first fast God gave man in the garden from the Tree.",
+	"Hyperbole is a thousand times better than exaggeration.",
+	"Who the hell cares what anybody else thinks? Just look into your heart and do whatever the hell makes you happy. - Dr. Bob Kelso",
+	"Think for yourself. - Immanuel Kant's philosophy of #CriticalThinking!",
+	"I have never said that you are not good at what you do. It's just that what you do is not worth doing. - #BigBangTheory!",
+	"For everything you have missed, you have gained something else, and for everything you gain, you lose something else. - Ralph Waldo Emerson",
+	"Reflecting on how much time I spend thinking about the past or future over what's directly in front of me. - Jack Dorsey",
+	"Complicated in the mind, but I'm simple at heart.",
+	"A sign of maturity is listening to (and not quickly dismissing) other people's opinions even when they are different than your own.",
+	"If you have a difficult task to do, give it to a lazy man, he will find an easier way to do it - Unknown",
+	"Before you diagnose yourself with depression or low self-esteem, first make sure that you are not, in fact, just surrounded by assholes.",
+	"I’m extremely thankful to my parents for training me to set goals and strive to reach them. - @RyanCarson",
+	"As a mobile user, I greatly prefer going to a website rather than installing an app. - Ryan Dahl",
+	"When I see a pretty girl, I just wanna go to her and say hi, but I can't because she'll think I'm weird.",
+	"If you build your API first and build it well then your quality of life increases as a function of time.",
+	"Success isn't doing something well one time, it's doing something well multiple times. It's the difference between luck and skill.",
+	"I battled with anger because of all the wrongdoings that have been done to me but now I realize that God wanted more for me. Truly blessed!",
+	"Don't come to church after the Nicene Creed has been said. If you aren't here to profess our faith, why come? - Achen",
+	"Blessed be the Lord my strength, which teacheth my hands to design, and my fingers to code websites.",
+	"You know you love what you do when you wake up every morning excited about what the day brings. I think this is the right field for me!",
+	"Guy: Hey, nice to meet you.<br/>Me: Thank you, nice to meet you.<br/>Guy: That's what she said.<br/>Me: (?)",
+	"Let people doubt you, when you fulfill your goals you will end up showing people that no one can deter you from your dreams and goals!",
+	"A friend is someone who knows you and still likes you. - Nikita",
+	"Do something kind today.",
+	"This code I just wrote is too magical. I can't figure out what the hell it's doing.",
+	"When I saw you I fell in love and you smiled, because you knew. -Shakespeare",
+	"When someone says 'You da man!', I truly believe that I am, in fact, da man.",
+	"If she's amazing, she won't be easy. If she's easy, she won't be amazing. If she's worth it, you won't give up.",
+	"Sometimes me think, 'What is friend?' And then me say, 'Friend is someone to share the last cookie with.' - Cookie Monster",
+	"There are two steps to creating change:<br/>1) Figure out where you want to be<br/>2) Figure out how to get there",
+	"Nothing is possible if you just believe it isn't. #unwisewords!",
+	"Two things define you. Your patience when you have nothing and your attitude when you have everything.",
+	"Be selfish: create and build things you want to see. The bet is others want the same.",
+	"You know you're in love when you can't fall asleep because reality is finally better than your dreams. - Dr. Seuss",
+	"Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring. - Marilyn Monroe",
+	"I'm just happy she's happy",
+	"Champions are not made of muscle, they are made of heart. When your heart is into something, nothing can stop you!",
+	"On this Feast of Dormition, I ask myself: Would a Marthoma quarterback throw a 'Hail Mary?' - Steve Kurian",
+	"Making her smile is the way to her heart...or be lazy and just get her food."
+);
+var q=quote.length, 
+    randomQuote=Math.round(Math.random()*(q-1));
+document.writeln("<div class='quote'>" + quote[randomQuote] + "</div>");
 </script></body></html>
